@@ -4,16 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Szkoła ponadgimlazialna</title>
+    <style>
+        body{
+            background-color: #af8c4b;
+            font-family: Tahoma;
+
+        }
+        #panel{
+            background-color: #ffd87e;
+            width: 70%;
+            height: 500px;
+            float: left;
+            overflow: scroll;
+        }
+        #s{
+            width: 30%;
+            height: 500px;
+            float: left;
+            text-align: right;
+        }
+        header{
+            text-align: center;
+            height: 60px;
+        }
+        footer{
+            text-align: center;
+            height: 25px;
+        }
+       
+        ul,li{
+            list-style-position: inside;
+            list-style-type: circle;
+        }
+        a{
+            color: #ffd87e;
+        }
+        hr{
+            border: 1px solid #ffd87e;
+        }
+        td{
+            border: 1px black dotted;
+            width: 405px;
+        }
+        
+    </style>
 </head>
 <body>
-    <form action="kolos.php" method="post">
-        <input type="submit" name="g" value="wszystkie">
-        <input type="submit" name="a" value="parzystosc">
-        <input type="submit" name="b" value="3 cyfrowe">
-        <input type="submit" name="c" value="pierwsze">
-        <input type="submit" name="d" value="ekstremka">
-        <input type="submit" name="e" value="powtorki">
-    </form>
+<form>
+    <header>
+      <h1>Projekt strony internetowej szkoły ponadpodstawowej</h1>  
+    </header>
+    
+    <section id="s">
+   <h3>Do pobrania</h3> 
+    <ul>
+        <li><a href="baza/zapytania.txt">zapytania SQL</a></li>
+        <li><a href="baza/szkola_nowa.sql">baza danych</a></li>
+    </ul>
+    <hr>
+    <h3>Wyznaczenie najwyższej średniej</h3>
+    <ul>
+        <li>Polak<input type="text"></li>
+        <li>Nowak<input type="text"></li>
+        <li>Rysik<input type="text"></li>
+    </ul>
+    <input type="submit" value="Wyznacz">
+    <h2>Najwyższa średnia:</h2>
+    </section>
+    <section id="panel">
+        <table style="width:100%" cols="5" rows="2" class="ew">
+            <tr>
+                <td class="ew">Treść zapytania</td>
+                <td class="ew">Zrzut ekranu</td>
+            </tr>
+            <tr>
+                <td class="ew">Treść pytania</td>
+                <td class="ew"><img src="https://img.wprost.pl/img/zdjecie-nocnego-nieba/7c/6f/8eccd192e82b69d4afeee13e9215.jpeg" alt="" width="405px"></td>
+            </tr>
+            <tr>
+                <td class="ew">Treść pytania</td>
+                <td class="ew"><img src="https://img.wprost.pl/img/zdjecie-nocnego-nieba/7c/6f/8eccd192e82b69d4afeee13e9215.jpeg" alt="" width="405px"></td>
+            </tr>
+            <tr>
+                <td class="ew">Treść pytania</td>
+                <td class="ew"><img src="https://img.wprost.pl/img/zdjecie-nocnego-nieba/7c/6f/8eccd192e82b69d4afeee13e9215.jpeg" alt="" width="405px"></td>
+            </tr>
+            <tr>
+                <td class="ew">Treść pytania</td>
+                <td class="ew"><img src="https://img.wprost.pl/img/zdjecie-nocnego-nieba/7c/6f/8eccd192e82b69d4afeee13e9215.jpeg" alt="" width="405px"></td>
+            </tr>
+        </table>
+    </section>
+    <footer>
+        <h4>Stronę wykonał: mikolaj trzosek</h4>
+    </footer>
+        
+    
+</form>
 </body>
 </html>
